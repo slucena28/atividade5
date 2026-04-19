@@ -1,0 +1,150 @@
+/* =====================
+   RESET / BASE
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* =====================
+   UTILITÁRIOS
+===================== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* =====================
+   HEADER
+===================== */
+.header {
+  background-color: #111;
+  color: #fff;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header__nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   HERO
+===================== */
+.hero {
+  background: url('banner.jpg') no-repeat center/cover;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.hero__text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero__button {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.hero__button--secondary {
+  background-color: #333;
+}
+
+/* =====================
+   SERVIÇOS
+===================== */
+.services {
+  padding: 60px 0;
+}
+
+.services__list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.services__item {
+  flex: 1 1 30%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.services__title {
+  margin-bottom: 10px;
+}
+
+.services__text {
+  font-size: 14px;
+}
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer__text {
+  text-align: center;
+}
+
+/* =====================
+   RESPONSIVIDADE
+===================== */
+@media (max-width: 768px) {
+  .header__container {
+    flex-direction: column;
+  }
+
+  .services__list {
+    flex-direction: column;
+  }
+
+  .hero__title {
+    font-size: 28px;
+  }
+}
